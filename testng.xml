@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Global_API" allow-return-values="true">
+    <test name="Auth">
+         <classes>
+             <class name="global_api.global_api.testCases.SignUp"/>
+             <class name="global_api.global_api.testCases.UserInfo"/>
+             <class name="global_api.global_api.testCases.Forgot_password"/>
+             <class name="global_api.global_api.testCases.Login_admin"/>
+             <class name="global_api.global_api.testCases.Otp"/>
+             <class name="global_api.global_api.testCases.Refresh"/>
+             <class name="global_api.global_api.testCases.Login_user"/>
+          </classes>
+     </test> <!-- Test -->
+</suite> <!-- Suite -->

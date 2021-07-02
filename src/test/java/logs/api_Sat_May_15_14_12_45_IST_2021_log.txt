@@ -1,0 +1,2 @@
+INFO    2021-05-15 14:12:47,726 [main] global_api.global_api.base.TestBase  - tried sign up using existing email --> vimals280@gmail.com
+INFO    2021-05-15 14:12:47,727 [main] global_api.global_api.base.TestBase  - invalid login, reason -->{email=[The email has already been taken.]}

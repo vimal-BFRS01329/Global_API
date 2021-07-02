@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="18" total="28" passed="5" failed="5" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-05-18T10:52:41Z" name="Global_API" finished-at="2021-05-18T10:52:50Z" duration-ms="9903">
+    <groups>
+    </groups>
+    <test started-at="2021-05-18T10:52:41Z" name="Auth" finished-at="2021-05-18T10:52:50Z" duration-ms="9903">
+      <class name="global_api.global_api.testCases.Login_admin">
+        <test-method is-config="true" signature="setup()[pri:0, instance:global_api.global_api.testCases.Login_admin@524d6d96]" started-at="2021-05-18T10:52:46Z" name="setup" finished-at="2021-05-18T10:52:46Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="login_admin()[pri:0, instance:global_api.global_api.testCases.Login_admin@524d6d96]" started-at="2021-05-18T10:52:46Z" name="login_admin" finished-at="2021-05-18T10:52:47Z" duration-ms="548" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [200] but found [400]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [200] but found [400]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:652)
+at org.testng.Assert.assertEquals(Assert.java:662)
+at global_api.global_api.testCases.Login_admin.login_admin(Login_admin.java:33)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_admin -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:global_api.global_api.testCases.Login_admin@524d6d96]" started-at="2021-05-18T10:52:47Z" name="getResult" finished-at="2021-05-18T10:52:47Z" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=login_admin status=FAILURE method=Login_admin.login_admin()[pri:0, instance:global_api.global_api.testCases.Login_admin@524d6d96] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- global_api.global_api.testCases.Login_admin -->
+      <class name="global_api.global_api.testCases.UserInfo">
+        <test-method is-config="true" signature="setup()[pri:0, instance:global_api.global_api.testCases.UserInfo@61d6015a]" started-at="2021-05-18T10:52:44Z" name="setup" finished-at="2021-05-18T10:52:44Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="userInfo()[pri:0, instance:global_api.global_api.testCases.UserInfo@61d6015a]" started-at="2021-05-18T10:52:44Z" name="userInfo" finished-at="2021-05-18T10:52:45Z" duration-ms="853" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [401] but found [200]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [401] but found [200]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:652)
+at org.testng.Assert.assertEquals(Assert.java:662)
+at global_api.global_api.testCases.UserInfo.userInfo(UserInfo.java:32)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userInfo -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:global_api.global_api.testCases.UserInfo@61d6015a]" started-at="2021-05-18T10:52:45Z" name="getResult" finished-at="2021-05-18T10:52:45Z" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=userInfo status=FAILURE method=UserInfo.userInfo()[pri:0, instance:global_api.global_api.testCases.UserInfo@61d6015a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- global_api.global_api.testCases.UserInfo -->
+      <class name="global_api.global_api.testCases.Login_user">
+        <test-method is-config="true" signature="setup()[pri:0, instance:global_api.global_api.testCases.Login_user@4ef37659]" started-at="2021-05-18T10:52:49Z" name="setup" finished-at="2021-05-18T10:52:49Z" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="invaliadLogin()[pri:0, instance:global_api.global_api.testCases.Login_user@4ef37659]" started-at="2021-05-18T10:52:49Z" name="invaliadLogin" finished-at="2021-05-18T10:52:50Z" duration-ms="699" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invaliadLogin -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:global_api.global_api.testCases.Login_user@4ef37659]" started-at="2021-05-18T10:52:50Z" name="getResult" finished-at="2021-05-18T10:52:50Z" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=invaliadLogin status=SUCCESS method=Login_user.invaliadLogin()[pri:0, instance:global_api.global_api.testCases.Login_user@4ef37659] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="validlogin()[pri:0, instance:global_api.global_api.testCases.Login_user@4ef37659]" started-at="2021-05-18T10:52:50Z" name="validlogin" finished-at="2021-05-18T10:52:50Z" duration-ms="568" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validlogin -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:global_api.global_api.testCases.Login_user@4ef37659]" started-at="2021-05-18T10:52:50Z" name="getResult" finished-at="2021-05-18T10:52:50Z" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validlogin status=SUCCESS method=Login_user.validlogin()[pri:0, instance:global_api.global_api.testCases.Login_user@4ef37659] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- global_api.global_api.testCases.Login_user -->
+      <class name="global_api.global_api.testCases.Forgot_password">
+        <test-method is-config="true" signature="setup()[pri:0, instance:global_api.global_api.testCases.Forgot_password@2525ff7e]" started-at="2021-05-18T10:52:45Z" name="setup" finished-at="2021-05-18T10:52:45Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="change_pwd()[pri:0, instance:global_api.global_api.testCases.Forgot_password@2525ff7e]" started-at="2021-05-18T10:52:45Z" name="change_pwd" finished-at="2021-05-18T10:52:46Z" duration-ms="740" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [200] but found [401]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [200] but found [401]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:652)
+at org.testng.Assert.assertEquals(Assert.java:662)
+at global_api.global_api.testCases.Forgot_password.change_pwd(Forgot_password.java:42)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- change_pwd -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:global_api.global_api.testCases.Forgot_password@2525ff7e]" started-at="2021-05-18T10:52:46Z" name="getResult" finished-at="2021-05-18T10:52:46Z" duration-ms="6" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=change_pwd status=FAILURE method=Forgot_password.change_pwd()[pri:0, instance:global_api.global_api.testCases.Forgot_password@2525ff7e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="forgot_pwd()[pri:0, instance:global_api.global_api.testCases.Forgot_password@2525ff7e]" started-at="2021-05-18T10:52:46Z" name="forgot_pwd" finished-at="2021-05-18T10:52:46Z" duration-ms="552" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- forgot_pwd -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:global_api.global_api.testCases.Forgot_password@2525ff7e]" started-at="2021-05-18T10:52:46Z" name="getResult" finished-at="2021-05-18T10:52:46Z" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=forgot_pwd status=SUCCESS method=Forgot_password.forgot_pwd()[pri:0, instance:global_api.global_api.testCases.Forgot_password@2525ff7e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- global_api.global_api.testCases.Forgot_password -->
+      <class name="global_api.global_api.testCases.Otp">
+        <test-method is-config="true" signature="setup()[pri:0, instance:global_api.global_api.testCases.Otp@152aa092]" started-at="2021-05-18T10:52:47Z" name="setup" finished-at="2021-05-18T10:52:47Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="otp_send()[pri:0, instance:global_api.global_api.testCases.Otp@152aa092]" started-at="2021-05-18T10:52:47Z" name="otp_send" finished-at="2021-05-18T10:52:48Z" duration-ms="754" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [200] but found [401]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [200] but found [401]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:652)
+at org.testng.Assert.assertEquals(Assert.java:662)
+at global_api.global_api.testCases.Otp.otp_send(Otp.java:40)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- otp_send -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:global_api.global_api.testCases.Otp@152aa092]" started-at="2021-05-18T10:52:48Z" name="getResult" finished-at="2021-05-18T10:52:48Z" duration-ms="5" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=otp_send status=FAILURE method=Otp.otp_send()[pri:0, instance:global_api.global_api.testCases.Otp@152aa092] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- global_api.global_api.testCases.Otp -->
+      <class name="global_api.global_api.testCases.Refresh">
+        <test-method is-config="true" signature="setup()[pri:0, instance:global_api.global_api.testCases.Refresh@44a7bfbc]" started-at="2021-05-18T10:52:48Z" name="setup" finished-at="2021-05-18T10:52:48Z" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="refresh()[pri:0, instance:global_api.global_api.testCases.Refresh@44a7bfbc]" started-at="2021-05-18T10:52:48Z" name="refresh" finished-at="2021-05-18T10:52:49Z" duration-ms="1531" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [200] but found [401]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [200] but found [401]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:652)
+at org.testng.Assert.assertEquals(Assert.java:662)
+at global_api.global_api.testCases.Refresh.refresh(Refresh.java:27)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- refresh -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:global_api.global_api.testCases.Refresh@44a7bfbc]" started-at="2021-05-18T10:52:49Z" name="getResult" finished-at="2021-05-18T10:52:49Z" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=refresh status=FAILURE method=Refresh.refresh()[pri:0, instance:global_api.global_api.testCases.Refresh@44a7bfbc] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- global_api.global_api.testCases.Refresh -->
+      <class name="global_api.global_api.testCases.SignUp">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:global_api.global_api.testCases.SignUp@2e1d27ba]" started-at="2021-05-18T10:52:40Z" name="setUp" finished-at="2021-05-18T10:52:41Z" duration-ms="443" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setReport()[pri:0, instance:global_api.global_api.testCases.SignUp@2e1d27ba]" started-at="2021-05-18T10:52:41Z" name="setReport" finished-at="2021-05-18T10:52:41Z" duration-ms="107" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setReport -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:global_api.global_api.testCases.SignUp@2e1d27ba]" started-at="2021-05-18T10:52:41Z" name="setup" finished-at="2021-05-18T10:52:41Z" duration-ms="92" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="invalidSignup()[pri:0, instance:global_api.global_api.testCases.SignUp@2e1d27ba]" started-at="2021-05-18T10:52:41Z" name="invalidSignup" finished-at="2021-05-18T10:52:43Z" duration-ms="2244" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidSignup -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:global_api.global_api.testCases.SignUp@2e1d27ba]" started-at="2021-05-18T10:52:43Z" name="getResult" finished-at="2021-05-18T10:52:43Z" duration-ms="16" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=invalidSignup status=SUCCESS method=SignUp.invalidSignup()[pri:0, instance:global_api.global_api.testCases.SignUp@2e1d27ba] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="validSignUp()[pri:0, instance:global_api.global_api.testCases.SignUp@2e1d27ba]" started-at="2021-05-18T10:52:43Z" name="validSignUp" finished-at="2021-05-18T10:52:44Z" duration-ms="1102" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validSignUp -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:global_api.global_api.testCases.SignUp@2e1d27ba]" started-at="2021-05-18T10:52:44Z" name="getResult" finished-at="2021-05-18T10:52:44Z" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validSignUp status=SUCCESS method=SignUp.validSignUp()[pri:0, instance:global_api.global_api.testCases.SignUp@2e1d27ba] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="endReport()[pri:0, instance:global_api.global_api.testCases.SignUp@2e1d27ba]" started-at="2021-05-18T10:52:50Z" name="endReport" finished-at="2021-05-18T10:52:51Z" duration-ms="376" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+      </class> <!-- global_api.global_api.testCases.SignUp -->
+    </test> <!-- Auth -->
+  </suite> <!-- Global_API -->
+</testng-results>

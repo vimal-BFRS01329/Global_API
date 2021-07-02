@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="7">Global_API</th></tr>
+<tr><td><a href="#t0">Auth</a></td><td class="num">5</td><td class="num">0</td><td class="num attn">5</td><td class="num">9,903</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Global_API</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Auth &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">global_api.global_api.testCases.Forgot_password</td><td><a href="#m0">change_pwd</a></td><td rowspan="1">1621335165464</td><td rowspan="1">740</td></tr><tr class="failedodd"><td rowspan="1">global_api.global_api.testCases.Login_admin</td><td><a href="#m1">login_admin</a></td><td rowspan="1">1621335166774</td><td rowspan="1">548</td></tr><tr class="failedeven"><td rowspan="1">global_api.global_api.testCases.Otp</td><td><a href="#m2">otp_send</a></td><td rowspan="1">1621335167327</td><td rowspan="1">754</td></tr><tr class="failedodd"><td rowspan="1">global_api.global_api.testCases.Refresh</td><td><a href="#m3">refresh</a></td><td rowspan="1">1621335168091</td><td rowspan="1">1531</td></tr><tr class="failedeven"><td rowspan="1">global_api.global_api.testCases.UserInfo</td><td><a href="#m4">userInfo</a></td><td rowspan="1">1621335164605</td><td rowspan="1">853</td></tr><tr><th colspan="4">Auth &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">global_api.global_api.testCases.Forgot_password</td><td><a href="#m5">forgot_pwd</a></td><td rowspan="1">1621335166216</td><td rowspan="1">552</td></tr><tr class="passedodd"><td rowspan="2">global_api.global_api.testCases.Login_user</td><td><a href="#m6">invaliadLogin</a></td><td rowspan="1">1621335169634</td><td rowspan="1">699</td></tr><tr class="passedodd"><td><a href="#m7">validlogin</a></td><td rowspan="1">1621335170336</td><td rowspan="1">568</td></tr><tr class="passedeven"><td rowspan="2">global_api.global_api.testCases.SignUp</td><td><a href="#m8">invalidSignup</a></td><td rowspan="1">1621335161231</td><td rowspan="1">2244</td></tr><tr class="passedeven"><td><a href="#m9">validSignUp</a></td><td rowspan="1">1621335163493</td><td rowspan="1">1102</td></tr></tbody>
+</table>
+<h2>Auth</h2><h3 id="m0">global_api.global_api.testCases.Forgot_password#change_pwd</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [200] but found [401]
+	at global_api.global_api.testCases.Forgot_password.change_pwd(Forgot_password.java:42)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">global_api.global_api.testCases.Login_admin#login_admin</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [200] but found [400]
+	at global_api.global_api.testCases.Login_admin.login_admin(Login_admin.java:33)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">global_api.global_api.testCases.Otp#otp_send</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [200] but found [401]
+	at global_api.global_api.testCases.Otp.otp_send(Otp.java:40)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">global_api.global_api.testCases.Refresh#refresh</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [200] but found [401]
+	at global_api.global_api.testCases.Refresh.refresh(Refresh.java:27)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">global_api.global_api.testCases.UserInfo#userInfo</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [401] but found [200]
+	at global_api.global_api.testCases.UserInfo.userInfo(UserInfo.java:32)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">global_api.global_api.testCases.Forgot_password#forgot_pwd</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">global_api.global_api.testCases.Login_user#invaliadLogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">global_api.global_api.testCases.Login_user#validlogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">global_api.global_api.testCases.SignUp#invalidSignup</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">global_api.global_api.testCases.SignUp#validSignUp</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

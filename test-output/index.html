@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 5 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Global_API" class="navigator-link">
+              <span class="suite-name border-failed">Global_API</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Global_API" class="navigator-link ">
+                    <span>testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Global_API" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Global_API" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Global_API" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Global_API" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Global_API" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Global_API" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">10 methods, 5 failed,   5 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Global_API" class="hide-methods failed suite-Global_API"> (hide)</a> <!-- hide-methods failed suite-Global_API -->
+                      <a href="#" panel-name="suite-Global_API" class="show-methods failed suite-Global_API"> (show)</a> <!-- show-methods failed suite-Global_API -->
+                    </span>
+                    <div class="method-list-content failed suite-Global_API">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Global_API" title="global_api.global_api.testCases.Forgot_password" class="method navigator-link" hash-for-method="change_pwd">change_pwd</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Global_API" title="global_api.global_api.testCases.Login_admin" class="method navigator-link" hash-for-method="login_admin">login_admin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Global_API" title="global_api.global_api.testCases.Otp" class="method navigator-link" hash-for-method="otp_send">otp_send</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Global_API" title="global_api.global_api.testCases.Refresh" class="method navigator-link" hash-for-method="refresh">refresh</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Global_API" title="global_api.global_api.testCases.UserInfo" class="method navigator-link" hash-for-method="userInfo">userInfo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Global_API -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Global_API" class="hide-methods passed suite-Global_API"> (hide)</a> <!-- hide-methods passed suite-Global_API -->
+                      <a href="#" panel-name="suite-Global_API" class="show-methods passed suite-Global_API"> (show)</a> <!-- show-methods passed suite-Global_API -->
+                    </span>
+                    <div class="method-list-content passed suite-Global_API">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Global_API" title="global_api.global_api.testCases.Forgot_password" class="method navigator-link" hash-for-method="forgot_pwd">forgot_pwd</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Global_API" title="global_api.global_api.testCases.Login_user" class="method navigator-link" hash-for-method="invaliadLogin">invaliadLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Global_API" title="global_api.global_api.testCases.SignUp" class="method navigator-link" hash-for-method="invalidSignup">invalidSignup</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Global_API" title="global_api.global_api.testCases.SignUp" class="method navigator-link" hash-for-method="validSignUp">validSignUp</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Global_API" title="global_api.global_api.testCases.Login_user" class="method navigator-link" hash-for-method="validlogin">validlogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Global_API -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Global_API" class="panel Global_API">
+          <div class="suite-Global_API-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">global_api.global_api.testCases.Forgot_password</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="change_pwd">
+                  </a> <!-- change_pwd -->
+                  <span class="method-name">change_pwd</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [200] but found [401]
+	at global_api.global_api.testCases.Forgot_password.change_pwd(Forgot_password.java:42)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Global_API-class-failed -->
+          <div class="suite-Global_API-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">global_api.global_api.testCases.UserInfo</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="userInfo">
+                  </a> <!-- userInfo -->
+                  <span class="method-name">userInfo</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [401] but found [200]
+	at global_api.global_api.testCases.UserInfo.userInfo(UserInfo.java:32)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Global_API-class-failed -->
+          <div class="suite-Global_API-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">global_api.global_api.testCases.Login_admin</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="login_admin">
+                  </a> <!-- login_admin -->
+                  <span class="method-name">login_admin</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [200] but found [400]
+	at global_api.global_api.testCases.Login_admin.login_admin(Login_admin.java:33)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Global_API-class-failed -->
+          <div class="suite-Global_API-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">global_api.global_api.testCases.Otp</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="otp_send">
+                  </a> <!-- otp_send -->
+                  <span class="method-name">otp_send</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [200] but found [401]
+	at global_api.global_api.testCases.Otp.otp_send(Otp.java:40)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Global_API-class-failed -->
+          <div class="suite-Global_API-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">global_api.global_api.testCases.Refresh</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="refresh">
+                  </a> <!-- refresh -->
+                  <span class="method-name">refresh</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [200] but found [401]
+	at global_api.global_api.testCases.Refresh.refresh(Refresh.java:27)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Global_API-class-failed -->
+          <div class="suite-Global_API-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">global_api.global_api.testCases.Forgot_password</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="forgot_pwd">
+                  </a> <!-- forgot_pwd -->
+                  <span class="method-name">forgot_pwd</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Global_API-class-passed -->
+          <div class="suite-Global_API-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">global_api.global_api.testCases.SignUp</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidSignup">
+                  </a> <!-- invalidSignup -->
+                  <span class="method-name">invalidSignup</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validSignUp">
+                  </a> <!-- validSignUp -->
+                  <span class="method-name">validSignUp</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Global_API-class-passed -->
+          <div class="suite-Global_API-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">global_api.global_api.testCases.Login_user</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="invaliadLogin">
+                  </a> <!-- invaliadLogin -->
+                  <span class="method-name">invaliadLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validlogin">
+                  </a> <!-- validlogin -->
+                  <span class="method-name">validlogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Global_API-class-passed -->
+        </div> <!-- panel Global_API -->
+        <div panel-name="test-xml-Global_API" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/home/vimal.s/eclipse-workspace-new/global_api/testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Global_API&quot; guice-stage=&quot;DEVELOPMENT&quot; allow-return-values=&quot;true&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Auth&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;global_api.global_api.testCases.SignUp&quot;/&gt;
+      &lt;class name=&quot;global_api.global_api.testCases.UserInfo&quot;/&gt;
+      &lt;class name=&quot;global_api.global_api.testCases.Forgot_password&quot;/&gt;
+      &lt;class name=&quot;global_api.global_api.testCases.Login_admin&quot;/&gt;
+      &lt;class name=&quot;global_api.global_api.testCases.Otp&quot;/&gt;
+      &lt;class name=&quot;global_api.global_api.testCases.Refresh&quot;/&gt;
+      &lt;class name=&quot;global_api.global_api.testCases.Login_user&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Auth --&gt;
+&lt;/suite&gt; &lt;!-- Global_API --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Global_API" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Global_API</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Auth (7 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Global_API" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Global_API</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Global_API" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Global_API</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Global_API');
+function tableData_Global_API() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(10);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'invalidSignup')
+data.setCell(0, 2, 'global_api.global_api.testCases.SignUp')
+data.setCell(0, 3, 2244);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'refresh')
+data.setCell(1, 2, 'global_api.global_api.testCases.Refresh')
+data.setCell(1, 3, 1531);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'validSignUp')
+data.setCell(2, 2, 'global_api.global_api.testCases.SignUp')
+data.setCell(2, 3, 1102);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'userInfo')
+data.setCell(3, 2, 'global_api.global_api.testCases.UserInfo')
+data.setCell(3, 3, 853);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'otp_send')
+data.setCell(4, 2, 'global_api.global_api.testCases.Otp')
+data.setCell(4, 3, 754);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'change_pwd')
+data.setCell(5, 2, 'global_api.global_api.testCases.Forgot_password')
+data.setCell(5, 3, 740);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'invaliadLogin')
+data.setCell(6, 2, 'global_api.global_api.testCases.Login_user')
+data.setCell(6, 3, 699);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'validlogin')
+data.setCell(7, 2, 'global_api.global_api.testCases.Login_user')
+data.setCell(7, 3, 568);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'forgot_pwd')
+data.setCell(8, 2, 'global_api.global_api.testCases.Forgot_password')
+data.setCell(8, 3, 552);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'login_admin')
+data.setCell(9, 2, 'global_api.global_api.testCases.Login_admin')
+data.setCell(9, 3, 548);
+window.suiteTableData['Global_API']= { tableData: data, tableDiv: 'times-div-Global_API'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 9 seconds</span>
+              <div id="times-div-Global_API">
+              </div> <!-- times-div-Global_API -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Global_API" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Global_API</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Global_API" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">18 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">global_api.global_api.testCases.Forgot_password</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">endReport</span>
+                <br/>
+                <span class="ignored-method-name">setUp</span>
+                <br/>
+                <span class="ignored-method-name">setReport</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">global_api.global_api.testCases.UserInfo</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">endReport</span>
+                <br/>
+                <span class="ignored-method-name">setUp</span>
+                <br/>
+                <span class="ignored-method-name">setReport</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">global_api.global_api.testCases.Login_admin</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">endReport</span>
+                <br/>
+                <span class="ignored-method-name">setUp</span>
+                <br/>
+                <span class="ignored-method-name">setReport</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">global_api.global_api.testCases.Login_user</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">endReport</span>
+                <br/>
+                <span class="ignored-method-name">setUp</span>
+                <br/>
+                <span class="ignored-method-name">setReport</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">global_api.global_api.testCases.Otp</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">endReport</span>
+                <br/>
+                <span class="ignored-method-name">setUp</span>
+                <br/>
+                <span class="ignored-method-name">setReport</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">global_api.global_api.testCases.Refresh</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">endReport</span>
+                <br/>
+                <span class="ignored-method-name">setUp</span>
+                <br/>
+                <span class="ignored-method-name">setReport</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Global_API" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">global_api.global_api.testCases.SignUp</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-test before">
+                <span class="method-name">setReport</span>
+                <span class="method-start">444 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">557 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">invalidSignup</span>
+                <span class="method-start">657 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=invalidSignup status=SUCCESS method=SignUp.invalidSignup()[pri:0, instance:global_a...)</span>
+                <span class="method-start">2903 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">validSignUp</span>
+                <span class="method-start">2919 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=validSignUp status=SUCCESS method=SignUp.validSignUp()[pri:0, instance:global_api.g...)</span>
+                <span class="method-start">4024 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">global_api.global_api.testCases.UserInfo</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">4029 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">userInfo</span>
+                <span class="method-start">4031 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=userInfo status=FAILURE method=UserInfo.userInfo()[pri:0, instance:global_api.globa...)</span>
+                <span class="method-start">4886 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">global_api.global_api.testCases.Forgot_password</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">4890 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">change_pwd</span>
+                <span class="method-start">4890 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=change_pwd status=FAILURE method=Forgot_password.change_pwd()[pri:0, instance:globa...)</span>
+                <span class="method-start">5635 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">forgot_pwd</span>
+                <span class="method-start">5642 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=forgot_pwd status=SUCCESS method=Forgot_password.forgot_pwd()[pri:0, instance:globa...)</span>
+                <span class="method-start">6196 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">global_api.global_api.testCases.Login_admin</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">6198 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">login_admin</span>
+                <span class="method-start">6200 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=login_admin status=FAILURE method=Login_admin.login_admin()[pri:0, instance:global_...)</span>
+                <span class="method-start">6750 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">global_api.global_api.testCases.Otp</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">6752 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">otp_send</span>
+                <span class="method-start">6753 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=otp_send status=FAILURE method=Otp.otp_send()[pri:0, instance:global_api.global_api...)</span>
+                <span class="method-start">7510 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">global_api.global_api.testCases.Refresh</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">7515 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">refresh</span>
+                <span class="method-start">7517 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=refresh status=FAILURE method=Refresh.refresh()[pri:0, instance:global_api.global_a...)</span>
+                <span class="method-start">9052 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">global_api.global_api.testCases.Login_user</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">9057 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">invaliadLogin</span>
+                <span class="method-start">9060 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=invaliadLogin status=SUCCESS method=Login_user.invaliadLogin()[pri:0, instance:glob...)</span>
+                <span class="method-start">9760 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">validlogin</span>
+                <span class="method-start">9762 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=validlogin status=SUCCESS method=Login_user.validlogin()[pri:0, instance:global_api...)</span>
+                <span class="method-start">10342 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">global_api.global_api.testCases.SignUp</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
+                <span class="method-name">endReport</span>
+                <span class="method-start">10391 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

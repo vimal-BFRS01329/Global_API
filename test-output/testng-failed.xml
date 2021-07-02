@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Global_API]" guice-stage="DEVELOPMENT" allow-return-values="true">
+  <test thread-count="5" name="Auth(failed)">
+    <classes>
+      <class name="global_api.global_api.testCases.Forgot_password">
+        <methods>
+          <include name="getResult"/>
+          <include name="endReport"/>
+          <include name="setUp"/>
+          <include name="setup"/>
+          <include name="change_pwd"/>
+          <include name="setReport"/>
+        </methods>
+      </class> <!-- global_api.global_api.testCases.Forgot_password -->
+      <class name="global_api.global_api.testCases.UserInfo">
+        <methods>
+          <include name="getResult"/>
+          <include name="endReport"/>
+          <include name="setUp"/>
+          <include name="setup"/>
+          <include name="setReport"/>
+          <include name="userInfo"/>
+        </methods>
+      </class> <!-- global_api.global_api.testCases.UserInfo -->
+      <class name="global_api.global_api.testCases.Login_admin">
+        <methods>
+          <include name="getResult"/>
+          <include name="endReport"/>
+          <include name="setUp"/>
+          <include name="setup"/>
+          <include name="login_admin"/>
+          <include name="setReport"/>
+        </methods>
+      </class> <!-- global_api.global_api.testCases.Login_admin -->
+      <class name="global_api.global_api.testCases.Otp">
+        <methods>
+          <include name="otp_send"/>
+          <include name="getResult"/>
+          <include name="endReport"/>
+          <include name="setUp"/>
+          <include name="setup"/>
+          <include name="setReport"/>
+        </methods>
+      </class> <!-- global_api.global_api.testCases.Otp -->
+      <class name="global_api.global_api.testCases.Refresh">
+        <methods>
+          <include name="getResult"/>
+          <include name="endReport"/>
+          <include name="refresh"/>
+          <include name="setUp"/>
+          <include name="setup"/>
+          <include name="setReport"/>
+        </methods>
+      </class> <!-- global_api.global_api.testCases.Refresh -->
+    </classes>
+  </test> <!-- Auth(failed) -->
+</suite> <!-- Failed suite [Global_API] -->

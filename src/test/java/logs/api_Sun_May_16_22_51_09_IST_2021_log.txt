@@ -1,0 +1,1 @@
+INFO    2021-05-16 22:51:11,653 [main] global_api.global_api.base.TestBase  - successfully logged in using creds: email --> vimals280@gmail.com password --> Vimal@123

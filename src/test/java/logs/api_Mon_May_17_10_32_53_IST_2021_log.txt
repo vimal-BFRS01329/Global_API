@@ -1,0 +1,4 @@
+INFO    2021-05-17 10:32:56,930 [main] global_api.global_api.base.TestBase  - tried sign up using existing email --> vimals280@gmail.com
+INFO    2021-05-17 10:32:56,930 [main] global_api.global_api.base.TestBase  - invalid login, reason -->{email=[The email has already been taken.]}
+INFO    2021-05-17 10:32:58,585 [main] global_api.global_api.base.TestBase  - succesfully sign up, new email is --> mail075405400@gmail.com and mobile is -->0754054001
+INFO    2021-05-17 10:33:00,670 [main] global_api.global_api.base.TestBase  - successfully logged in using creds: email --> vimals280@gmail.com password --> Vimal@123
